@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for passgenerator on 2024-05-22T10:44:49-06:00
+# fly.toml app configuration file generated for passgenerator on 2024-05-22T10:48:53-06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -20,3 +20,11 @@ primary_region = 'qro'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
