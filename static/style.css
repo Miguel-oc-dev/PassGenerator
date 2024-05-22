@@ -1,0 +1,59 @@
+:root{
+    --tono1: #03045E;
+    --tono2: #0077B6;
+    --tono3: #00B4D8;
+    --tono4: #90E0EF;
+    --tono5: #CAF0F8;
+}
+
+/*Global*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--tono5);
+}
+
+h1 {
+    margin-top: 0;
+    color: var(--tono4);
+}
+
+h2 {
+    color: var(--tono4);
+}
+
+label {
+    color: var(--tono4);
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+.container {
+    background: var(--tono2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.54);
+    border-radius: 1rem;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+}
+
+.password {
+    font-family: monospace;
+    background: var(--tono4);
+    padding: 10px;
+    border-radius: 4px;
+}
